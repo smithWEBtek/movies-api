@@ -26,13 +26,15 @@ gem 'puma', '~> 3.7'
 gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'foreman', '~> 0.82.0'
+gem 'nokogiri', '>=1.5.9'
+gem 'httparty'
 
 group :development, :test do
 	gem 'listen'
 end
 
 group :development do
- 
+gem 'pry'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
