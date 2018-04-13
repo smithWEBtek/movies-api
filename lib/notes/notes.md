@@ -1,12 +1,13 @@
 ## Movies API
 
+
+
+
+
 ## Netflix sub-categories
+http://www.netflix.com/browse/genre/CODE
 
 ## IMDB details
-
-
-
- 
 
 ## User 
 
@@ -29,6 +30,11 @@
 	- entertain
  
 
+const revenueTotaler = (accumulator, currentValue) => accumulator + currentValue;
+
+function totalRevenue(drivers){
+  return drivers.reduce(revenueTotaler)
+}
 
 
 
