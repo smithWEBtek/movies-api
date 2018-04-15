@@ -14,7 +14,6 @@ class Genres extends Component {
 	}
 
 	render() {
-		// const { genres } = this.props
 		let renderedGenres = this.props.genres.map((genre, index) => {
 			let url = 'http://netflix.com/browse/genre/' + `${genre.code}`
 			return (
@@ -44,6 +43,5 @@ const mapDispatchToProps = dispatch => {
 		onFetchGenres: () => dispatch(actions.fetchGenres())
 	}
 }
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(Genres)
