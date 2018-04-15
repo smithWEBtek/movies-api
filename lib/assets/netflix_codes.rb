@@ -1,5 +1,4 @@
-NETFLIX_CODES = {
-"Action & Adventure": 1365,
+{"Action & Adventure": 1365,
 "Action Comedies": 43040,
 "Action Sci-Fi & Fantasy": 1568,
 "Action Thrillers": 43048,
@@ -208,5 +207,4 @@ NETFLIX_CODES = {
 "Werewolf Horror Movies": 75930,
 "Westerns": 7700,
 "World Music Concerts": 2856,
-"Zombie Horror Movies": 75405
-}
+"Zombie Horror Movies": 75405}

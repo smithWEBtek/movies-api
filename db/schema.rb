@@ -16,13 +16,13 @@ ActiveRecord::Schema.define(version: 20180413225302) do
   enable_extension "plpgsql"
 
   create_table "genres", force: :cascade do |t|
-    t.string "name"
+    t.string "title"
     t.integer "code"
   end
 
   create_table "movies", force: :cascade do |t|
     t.string "title"
-    t.integer "genre_id"
+    t.string "description"
   end
 
 end
