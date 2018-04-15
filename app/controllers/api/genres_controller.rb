@@ -3,10 +3,13 @@ class Api::GenresController < ApplicationController
 
 	def index 
 		@genres = Genre.all 
+		render json: @genres
+
+
 		# render '/api/genres/index'
-		respond_to do |format|
-      format.html { render :index }
-      format.json { render json: @genres }
-    end
+		# respond_to do |format|
+    #   format.html { render :index }
+    #   format.json { render json: @genres }
+    # end
 	end
 end

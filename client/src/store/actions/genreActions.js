@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes'
-import GenreService from '../services/GenreService'
+import GenreService from '../services/genreService'
 
 //-----CREATE GENRE ACTIONS-----------------------------
 export const createGenreStart = () => {

@@ -25,17 +25,14 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
-gem 'foreman', '~> 0.82.0'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
 
 group :development, :test do
+	gem 'foreman', '~> 0.82.0'
 	gem 'listen'
+	gem 'pry'
 end
-
-group :development do
-gem 'pry'
-end
-
+ 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
