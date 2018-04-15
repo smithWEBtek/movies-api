@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 20180413225302) do
   create_table "genres", force: :cascade do |t|
     t.string "title"
     t.integer "code"
+    t.string "url"
   end
 
   create_table "movies", force: :cascade do |t|
