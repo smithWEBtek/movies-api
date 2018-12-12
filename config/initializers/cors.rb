@@ -7,10 +7,9 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-		# origins 'localhost:3000', '127.0.0.1:3000', 'localhost:5000', '127.0.0.1:5000', 'https://swt-movies-client.herokuapp.com'
-		origines '*'
+		origins '*', 'localhost:3000', '127.0.0.1:3000', 'localhost:5000', 'localhost:5500', '127.0.0.1:5000',  '127.0.0.1:5500', 'https://swt-movies-client.herokuapp.com'
     resource '*',
-      headers: :any,
+			headers: :any,
       methods: [:get, :post, :put, :patch, :delete, :options, :head]
   end
 end
