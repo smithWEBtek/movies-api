@@ -6,11 +6,8 @@ git_source(:github) do |repo_name|
 end
 
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
-# Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
-# Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -19,14 +16,18 @@ gem 'puma', '~> 3.7'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
+
+group :development do
+	gem 'capistrano-rails'
+	gem 'capistrano-bundler'
+	gem 'capistrano-passenger'
+	gem 'capistrano', '~> 3.7.2'
+	gem 'capistrano-rvm'
+end
 
 group :development, :test do
 	gem 'foreman', '~> 0.82.0'
