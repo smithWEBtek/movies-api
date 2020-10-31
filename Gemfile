@@ -29,11 +29,11 @@ group :development do
 	gem 'capistrano-passenger'
 	gem 'capistrano', '~> 3.7.2'
 	gem 'capistrano-rvm'
+	gem 'listen'
 end
 
 group :development, :test do
 	gem 'foreman', '~> 0.82.0'
-	gem 'listen'
 	gem 'pry'
 end
  
