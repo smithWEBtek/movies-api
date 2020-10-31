@@ -46,6 +46,7 @@ GEM
     airbrussh (1.4.0)
       sshkit (>= 1.6.1, != 1.7.0)
     arel (8.0.0)
+    bcrypt_pbkdf (1.0.1)
     builder (3.2.3)
     capistrano (3.7.2)
       airbrussh (>= 1.0.0)
@@ -69,6 +70,7 @@ GEM
     coderay (1.1.2)
     concurrent-ruby (1.0.5)
     crass (1.0.4)
+    ed25519 (1.2.4)
     erubi (1.7.1)
     ffi (1.13.1)
     foreman (0.82.0)
@@ -158,11 +160,13 @@ PLATFORMS
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.0)
+  bcrypt_pbkdf
   capistrano (~> 3.7.2)
   capistrano-bundler
   capistrano-passenger
   capistrano-rails
   capistrano-rvm
+  ed25519
   foreman (~> 0.82.0)
   httparty
   listen

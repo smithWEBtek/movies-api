@@ -20,6 +20,8 @@ gem 'rack-cors'
 gem 'active_model_serializers', '~> 0.10.0'
 gem 'nokogiri', '>=1.5.9'
 gem 'httparty'
+gem 'ed25519'
+gem 'bcrypt_pbkdf'
 
 group :development do
 	gem 'capistrano-rails'
