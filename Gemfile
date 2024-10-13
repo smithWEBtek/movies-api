@@ -1,40 +1,29 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-git_source(:github) do |repo_name|
-  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
-  "https://github.com/#{repo_name}.git"
-end
-
-gem 'rails', '~> 5.1.6'
+ruby '2.7.1'
+gem 'csv'
+gem 'rails', '~> 5.2.2'
 gem 'pg', '>= 0.18', '< 2.0'
-# gem 'puma', '~> 3.12'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-# gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 4.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-gem 'rack-cors'
-gem 'active_model_serializers', '~> 0.10.0'
-gem 'nokogiri', '>=1.5.9'
-gem 'httparty'
+gem 'puma', '~> 3.12'
+gem 'active_model_serializers'
+gem 'capistrano-rails'
+gem 'capistrano-bundler'
+gem 'capistrano-passenger'
+gem 'capistrano', '~> 3.7.2'
+gem 'capistrano-rvm'
 gem 'ed25519'
 gem 'bcrypt_pbkdf'
 
-group :development do
-	gem 'capistrano-rails'
-	gem 'capistrano-bundler'
-	gem 'capistrano-passenger'
-	gem 'capistrano', '~> 3.7.2'
-	gem 'capistrano-rvm'
-	gem 'listen'
-end
+gem 'bootsnap', '>= 1.1.0', require: false
+gem 'rack-cors'
 
 group :development, :test do
-	gem 'foreman', '~> 0.82.0'
-	gem 'pry'
+  gem 'pry'
 end
- 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+
+group :development do
+  gem 'listen', '>= 3.0.5', '< 3.2'
+end
+
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
